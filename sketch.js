@@ -231,7 +231,7 @@ class Boid {
 function getColorFromSpeed(speed, maxSpeed) {
   let percent = speed / maxSpeed; // Normalize speed to a 0-1 range
   let endColor = color(0, 0, 255); // Blue (fast)
-  let startColor = color(255, 0, 50); // Red (slow)
+  let startColor = color(0, 255, 50); // Green (slow)
   let lerpedColor = lerpColor(startColor, endColor, percent); // Linear interpolation between the 2 colors
   return lerpedColor;
 }
